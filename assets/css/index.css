@@ -1,0 +1,142 @@
+/* Page */
+@font-face {
+  font-family: "Exo 2";
+  src: url("https://fonts.gstatic.com/s/exo2/v10/7cH1v4okm5zmbvwkAx_sfcEuiD8jvvKsOdC_.woff2")
+}
+
+html, body {
+  font-family: 'Exo 2', sans-serif;
+  background-color: #282b30;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+  width: 12px;
+  border-radius: 15px;
+  background: #2f3337;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #212327;
+  border-radius: 15px;
+  -webkit-border-radius: 1ex;
+  border: 3px solid #2f3337;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1e2024;
+  border-radius: 15px;
+  -webkit-border-radius: 1ex;
+}
+
+/* Details */
+details {
+  display: block;
+  border: 1px solid rgb(21, 19, 19);
+  border-radius: 4px;
+  margin: 10px 15px 0px 15px;
+  padding: .5em;
+}
+
+details summary {
+  display: list-item;
+  margin: -.5em;
+  padding: .5em;
+}
+
+details[open]>summary {
+  margin-bottom: .5em;
+  border-bottom: 1px solid black;
+}
+
+/* Blocks */
+.banner-block {
+  width: 45%;
+}
+
+@media only screen and (max-width: 1300px) { 
+  .banner-block { 
+    width: 100%; 
+  } 
+}
+
+.discord-block {
+  margin: 1em;
+}
+
+.discord-img {
+  width: 35%;
+}
+
+@media only screen and (max-width: 1300px) { 
+  .discord-img {
+    width: 95%;
+  } 
+}
+
+/* Colored text and other */
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 15px solid rgba(0, 0, 0, .1)
+}
+
+.gray-text {
+  color: gray;
+}
+
+.red-text {
+  color: red;
+}
+
+.blue-text {
+  color: lightblue;
+}
+
+.flameout-color-text {
+  color: #EE3425;
+}
+
+.yellow-text {
+  color: yellow;
+}
+
+.margin-0 {
+  margin: 0px 0px 0px 0px;
+}
+
+/* form */
+input {
+  color: white;
+  width: 95%;
+  font-size: 19px;
+  background-color: rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+  border: 2px solid black;
+  padding: 12px 0px 14px 43px;
+  margin: 0px -1em 10px 3%;
+  border-radius: 5px;
+}
+
+.exp-background-for-input {
+  background-image: url('../../assets/gif/exp.gif');
+  background-position: 12px 12px; 
+  background-repeat: no-repeat;
+}
+
+.moneybag-background-for-input {
+  background-image: url('../../assets/img/moneybag.png');
+  background-position: 12px 12px; 
+  background-repeat: no-repeat;
+}
+
+.form-block {
+  display: flex;
+  place-items: center;
+  place-content: center;
+  margin: 0;
+}
