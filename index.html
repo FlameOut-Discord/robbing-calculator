@@ -74,11 +74,11 @@
       let levelOfVictim = form.elements.levelOfVictim;
       let NumberOfCoinsOfVictim = form.elements.NumberOfCoinsOfVictim;
 
-      let msg = `Минимальное число среди ${levelOfRobber.value} (грабителя) и ${levelOfVictim.value} (жертвы) - <span class="blue-text">${Math.min(levelOfRobber.value, levelOfVictim.value)}</span><br>
-Максимальное число среди ${levelOfRobber.value} (грабителя) и ${levelOfVictim.value} (жертвы) - <span class="blue-text">${Math.max(levelOfRobber.value, levelOfVictim.value)}</span><br>
-<span class="blue-text">${Math.min(levelOfRobber.value, levelOfVictim.value)}</span> (уровень грабителя) поделить на ${Math.max(levelOfRobber.value, levelOfVictim.value)} (уровень жертвы) получится <span class="blue-text">${Math.min(levelOfRobber.value, levelOfVictim.value) / Math.max(levelOfRobber.value, levelOfVictim.value)}</span><br>
-<span class="blue-text">${Math.min(levelOfRobber.value, levelOfVictim.value) / Math.max(levelOfRobber.value, levelOfVictim.value)}</span> умножить на 100 получится <span class="blue-text">${Math.min(levelOfRobber.value, levelOfVictim.value) / Math.max(levelOfRobber.value, levelOfVictim.value) * 100}</span><br>
-<span class="blue-text">${Math.min(levelOfRobber.value, levelOfVictim.value) / Math.max(levelOfRobber.value, levelOfVictim.value) * 100}</span> поделить на 3 получится <span class="blue-text">${Math.min(levelOfRobber.value, levelOfVictim.value) / Math.max(levelOfRobber.value, levelOfVictim.value) * 100 / 3}</span>
+      let msg = `Минимальное число среди ${levelOfRobber.value} (грабителя) и ${levelOfVictim.value} (жертвы) - <span class="lightblue-text">${Math.min(levelOfRobber.value, levelOfVictim.value)}</span><br>
+Максимальное число среди ${levelOfRobber.value} (грабителя) и ${levelOfVictim.value} (жертвы) - <span class="lightblue-text">${Math.max(levelOfRobber.value, levelOfVictim.value)}</span><br>
+<span class="lightblue-text">${Math.min(levelOfRobber.value, levelOfVictim.value)}</span> (уровень грабителя) поделить на <span class="lightblue-text">${Math.max(levelOfRobber.value, levelOfVictim.value)}</span> (уровень жертвы) получится <span class="lightblue-text">${Math.min(levelOfRobber.value, levelOfVictim.value) / Math.max(levelOfRobber.value, levelOfVictim.value)}</span><br>
+<span class="lightblue-text">${Math.min(levelOfRobber.value, levelOfVictim.value) / Math.max(levelOfRobber.value, levelOfVictim.value)}</span> умножить на 100 получится <span class="lightblue-text">${Math.min(levelOfRobber.value, levelOfVictim.value) / Math.max(levelOfRobber.value, levelOfVictim.value) * 100}</span><br>
+<span class="lightblue-text">${Math.min(levelOfRobber.value, levelOfVictim.value) / Math.max(levelOfRobber.value, levelOfVictim.value) * 100}</span> поделить на 3 получится <span class="lightblue-text">${Math.min(levelOfRobber.value, levelOfVictim.value) / Math.max(levelOfRobber.value, levelOfVictim.value) * 100 / 3}</span>
 <br><br>
 Процент монет кол-во которых Вы сможете получить (не выше <span class="flameout-color-text">33.333%</span>):<br>
 <span class="yellow-text">${Math.min(levelOfRobber.value, levelOfVictim.value) / Math.max(levelOfRobber.value, levelOfVictim.value) * 100 / 3}</span>
