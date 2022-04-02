@@ -11,8 +11,8 @@
 
   <meta name="theme-color" content="#f39c12">
   <meta property="og:title" content="FlameOut Robbing Calculator" />
-  <meta property="og:site_name" content="FlameOut Robbing Calculator" />
-  <meta property="og:description" content="FlameOut / Калькулятор грабежа: На сколько монет Вы сможете ограбить пользователя командой rob или bankhack в боте? Узнать ответ можно на этом сайте." />
+  <meta property="og:site_name" content="Калькулятор грабежа" />
+  <meta property="og:description" content="На сколько монет Вы сможете ограбить пользователя командой rob или bankhack в боте? Узнать ответ можно на этом сайте." />
   <meta name="keywords" content="Попыт, попит, симпл димпл, Discord, bot, calculator, site, flameout, flame, spotify, faq, soundcloud, music, youtube, clear messages, дискорд, бот, сайт, флейм, флеймаут, саундклауд, ютуб, музыка, спотифи, спотифай, очистка сообщений, множество возможностей, slowmode, слоумод, медленный режим, кастомный префикс, custom prefix, custom language, кастомный язык, minecraft, статистика vimeworld, статистика хайпиксель, редгуй, redguy, online, онлайн, игра змейка, snake game, ваймворлд, hypixel, stats, info of minecraft server, информация о майнкрафт сервере, статистика, bans, kicks, баны, кики, многофункциональный, полезное, fun, веселье, profile, server, сервер, animals, картинки животных">
   <meta property="og:image" content="https://github.com/FlameOut-Discord/flameout-design/raw/main/flame_256x256.png" />
   <meta property="og:type" content="website">
@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="./assets/css/index.css">
 
   <script type="text/javascript" defer>
-    let newTitle = "Калькулятор грабежа ・ FlameOut";
+    let newTitle = "FlameOut — калькулятор грабежа";
     if (document.title != newTitle) {
       document.title = newTitle;
       console.log("Title changed.");
@@ -37,13 +37,13 @@
     <div class="banner-block">
       <img src="https://raw.githubusercontent.com/FlameOut-Discord/flameout-design/main/flame_banner_white.png" width="100%">
     </div>
-    <!-- <p class="gray-text margin-0">...</p> -->
+    <p class="gray-text margin-0">Здесь Вы можете узнать сколько сможете получить монет при успешном ограблении пользователя или его банка.</p>
   </div>
 
   <hr>
 
   <div class="form-block">
-    <form name="nbvk_forms">
+    <form name="nbvk_forms_robbingCalculator">
       <label>
         <input class="exp-background-for-input" required type="number" name="levelOfRobber" placeholder="Укажите уровень грабителя">
       </label>
@@ -59,7 +59,7 @@
   </div>
 
   <div class="result" align="center">
-    <p class="gray-text" id="calc-result">Для работы с сайтом необходимо включить JavaScript! Разрешите браузеру использование JavaScript на этом сайте и/или скачайте новый браузер</p>
+    <p class="gray-text" id="calc-result">Для работы с сайтом необходимо включить JavaScript! Разрешите браузеру использование JavaScript на этом сайте и/или скачайте новый браузер<br>JavaScript must be enabled to use this site! Allow your browser to use JavaScript on this site and/or download a new browser</p>
   </div>
 
   <script>
@@ -68,7 +68,7 @@
     }
 
     setInterval(() => {
-      let form = document.forms.nbvk_forms;
+      let form = document.forms.nbvk_forms_robbingCalculator;
 
       let levelOfRobber = form.elements.levelOfRobber;
       let levelOfVictim = form.elements.levelOfVictim;
